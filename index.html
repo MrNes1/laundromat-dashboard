@@ -135,8 +135,8 @@
 
 <div class="header">
   <div>
-    <h1>🏪 Laundromat Opportunity Dashboard
-      <span>NY · NJ · CT · PA &nbsp;|&nbsp; Max $300K &nbsp;|&nbsp; Min 10% Profitability &nbsp;|&nbsp; Home: 11518 East Rockaway, NY</span>
+    <h1>ðª Laundromat Opportunity Dashboard
+      <span>NY Â· NJ Â· CT Â· PA &nbsp;|&nbsp; Max $300K &nbsp;|&nbsp; Min 10% Profitability &nbsp;|&nbsp; Home: 11518 East Rockaway, NY</span>
     </h1>
   </div>
   <div class="week-selector">
@@ -158,31 +158,31 @@
   <div class="metric-grid">
     <div class="metric-card blue">
       <div class="metric-label">Listings Qualified</div>
-      <div class="metric-value" id="m-qualified">—</div>
-      <div class="metric-sub" id="m-scanned">of — scanned</div>
+      <div class="metric-value" id="m-qualified">â</div>
+      <div class="metric-sub" id="m-scanned">of â scanned</div>
       <div class="metric-delta neutral" id="m-qualified-delta"></div>
     </div>
     <div class="metric-card green">
       <div class="metric-label">Avg Cash Flow</div>
-      <div class="metric-value" id="m-cf">—</div>
+      <div class="metric-value" id="m-cf">â</div>
       <div class="metric-sub">Seller's Discretionary Earnings</div>
       <div class="metric-delta neutral" id="m-cf-delta"></div>
     </div>
     <div class="metric-card purple">
       <div class="metric-label">Avg Profitability</div>
-      <div class="metric-value" id="m-profit">—</div>
-      <div class="metric-sub">Cash Flow ÷ Asking Price</div>
+      <div class="metric-value" id="m-profit">â</div>
+      <div class="metric-sub">Cash Flow Ã· Asking Price</div>
       <div class="metric-delta neutral" id="m-profit-delta"></div>
     </div>
     <div class="metric-card orange">
       <div class="metric-label">Avg Asking Price</div>
-      <div class="metric-value" id="m-price">—</div>
+      <div class="metric-value" id="m-price">â</div>
       <div class="metric-sub">Qualified listings only</div>
       <div class="metric-delta neutral" id="m-price-delta"></div>
     </div>
     <div class="metric-card teal">
       <div class="metric-label">Avg Distance</div>
-      <div class="metric-value" id="m-distance">—</div>
+      <div class="metric-value" id="m-distance">â</div>
       <div class="metric-sub">From East Rockaway, NY</div>
       <div class="metric-delta neutral" id="m-dist-delta"></div>
     </div>
@@ -191,28 +191,28 @@
   <!-- CHARTS ROW 1 -->
   <div class="charts-grid">
     <div class="chart-card">
-      <div class="chart-title">📈 Cash Flow Trend</div>
+      <div class="chart-title">ð Cash Flow Trend</div>
       <div class="chart-subtitle">Average SDE across all qualified listings per week</div>
       <div class="chart-container"><canvas id="cfTrendChart"></canvas></div>
     </div>
     <div class="chart-card">
-      <div class="chart-title">💰 Profitability Trend</div>
+      <div class="chart-title">ð° Profitability Trend</div>
       <div class="chart-subtitle">Average profitability % per week</div>
       <div class="chart-container"><canvas id="profitTrendChart"></canvas></div>
     </div>
     <div class="chart-card">
-      <div class="chart-title">🏷️ Price Distribution by State</div>
+      <div class="chart-title">ð·ï¸ Price Distribution by State</div>
       <div class="chart-subtitle">Average asking price for qualified listings (current week)</div>
       <div class="chart-container"><canvas id="priceStateChart"></canvas></div>
     </div>
     <div class="chart-card">
-      <div class="chart-title">💵 Cash Flow by State</div>
+      <div class="chart-title">ðµ Cash Flow by State</div>
       <div class="chart-subtitle">Average cash flow for qualified listings (current week)</div>
       <div class="chart-container"><canvas id="cfStateChart"></canvas></div>
     </div>
     <div class="chart-card wide">
-      <div class="chart-title">🔵 Price vs. Cash Flow — Opportunity Map</div>
-      <div class="chart-subtitle">Bubble size = opportunity score · Color = state · Best opportunities: lower-left &amp; higher cash flow</div>
+      <div class="chart-title">ðµ Price vs. Cash Flow â Opportunity Map</div>
+      <div class="chart-subtitle">Bubble size = opportunity score Â· Color = state Â· Best opportunities: lower-left &amp; higher cash flow</div>
       <div class="chart-container tall"><canvas id="scatterChart"></canvas></div>
     </div>
   </div>
@@ -230,15 +230,15 @@
       <table id="listingsTable">
         <thead>
           <tr>
-            <th onclick="sortBy('rank')" id="th-rank"># <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('name')">Listing <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('state')">State <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('price')" id="th-price">Ask Price <span class="sort-icon">↓</span></th>
-            <th onclick="sortBy('cashflow')" id="th-cf">Cash Flow <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('profitability')" id="th-profit">Profit % <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('distance')">Distance <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('tenure')">Tenure <span class="sort-icon">↕</span></th>
-            <th onclick="sortBy('score')" id="th-score">Score <span class="sort-icon">↕</span></th>
+            <th onclick="sortBy('rank')" id="th-rank"># <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('name')">Listing <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('state')">State <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('price')" id="th-price">Ask Price <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('cashflow')" id="th-cf">Cash Flow <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('profitability')" id="th-profit">Profit % <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('distance')">Distance <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('tenure')">Tenure <span class="sort-icon">â</span></th>
+            <th onclick="sortBy('score')" id="th-score">Score <span class="sort-icon">â</span></th>
           </tr>
         </thead>
         <tbody id="listingsBody"></tbody>
@@ -255,7 +255,7 @@
         <div class="modal-title" id="modalTitle"></div>
         <div class="modal-subtitle" id="modalSubtitle"></div>
       </div>
-      <button class="modal-close" onclick="document.getElementById('stateModal').classList.remove('open')">✕</button>
+      <button class="modal-close" onclick="document.getElementById('stateModal').classList.remove('open')">â</button>
     </div>
     <div class="modal-body">
       <table>
@@ -278,123 +278,357 @@
 </div>
 
 <div class="footer">
-  Data sourced from BizBuySell · Filters: Max $300,000 · Min 10% Profitability · Scoring: Cash Flow 40pts · Price 30pts · Tenure 20pts · Distance 10pts<br>
-  This dashboard is updated weekly every Monday at 10:00 AM ET · All figures are seller-reported and should be independently verified
+  Data sourced from BizBuySell Â· Filters: Max $300,000 Â· Min 10% Profitability Â· Scoring: Cash Flow 40pts Â· Price 30pts Â· Tenure 20pts Â· Distance 10pts<br>
+  This dashboard is updated weekly every Monday at 10:00 AM ET Â· All figures are seller-reported and should be independently verified
 </div>
 
 <script>
 // ============================================================
-// WEEKLY DATA — updated automatically each Monday
+// WEEKLY DATA â updated automatically each Monday
 // ============================================================
 /* WEEKLY_DATA_START */
 const WEEKLY_DATA = [
   {
-  "weekOf": "2026-04-03",
-  "totalScanned": 85,
-  "qualified": 5,
-  "listings": [
-    {
-      "rank": 1,
-      "name": "Philadelphia Laundromat (41W/44D)",
-      "location": "Philadelphia",
-      "state": "PA",
-      "price": 139000,
-      "cashflow": 86800,
-      "profitability": 62.4,
-      "tenure": 0,
-      "distance": 100,
-      "score": 67,
-      "url": "https://www.bizbuysell.com/Business-Opportunity/philadelphia-laundromat/2010180/",
-      "note": ""
-    },
-    {
-      "rank": 2,
-      "name": "Small Laundromat, Brooklyn (36W/36D)",
-      "location": "Brooklyn",
-      "state": "NY",
-      "price": 250000,
-      "cashflow": 100000,
-      "profitability": 40,
-      "tenure": 0,
-      "distance": 15,
-      "score": 63,
-      "url": "https://www.bizbuysell.com/Business-Opportunity/a-laundromat-great-location-brooklyn/2001711/",
-      "note": ""
-    },
-    {
-      "rank": 3,
-      "name": "Laundromat — Philadelphia",
-      "location": "Philadelphia",
-      "state": "PA",
-      "price": 79000,
-      "cashflow": 40000,
-      "profitability": 50.6,
-      "tenure": 0,
-      "distance": 100,
-      "score": 52,
-      "url": "https://www.bizbuysell.com/pennsylvania/philadelphia-county/laundromats-and-coin-laundry-businesses-for-sale/",
-      "note": ""
-    },
-    {
-      "rank": 4,
-      "name": "Absentee Laundromat — Queens",
-      "location": "Queens",
-      "state": "NY",
-      "price": 285000,
-      "cashflow": 72000,
-      "profitability": 25.3,
-      "tenure": 0,
-      "distance": 15,
-      "score": 50,
-      "url": "https://www.bizbuysell.com/new-york/queens-county/laundromats-and-coin-laundry-businesses-for-sale/",
-      "note": "absentee owner"
-    },
-    {
-      "rank": 5,
-      "name": "Profitable Laundromat — Bridgeport",
-      "location": "Bridgeport",
-      "state": "CT",
-      "price": 79000,
-      "cashflow": 21000,
-      "profitability": 26.6,
-      "tenure": 0,
-      "distance": 60,
-      "score": 44,
-      "url": "https://www.bizbuysell.com/connecticut/laundromats-and-coin-laundry-businesses-for-sale/",
-      "note": ""
-    }
-  ]
-},
-  {
-    weekOf: "2026-03-26",
-    totalScanned: 32,
-    qualified: 25,
-    listings: [
-      { rank: 1,  name: "30-Year Established Laundromat",            location: "Westchester County", state: "NY", price: 150000, cashflow: 66000,  profitability: 44.0, tenure: 30, distance: 35,  score: 92, url: "https://www.bizbuysell.com/business-opportunity/30-year-established-laundromat-for-sale/2482823/" },
-      { rank: 2,  name: "Laundromat for Sale — Kings County",         location: "Brooklyn",           state: "NY", price: 200000, cashflow: 81000,  profitability: 40.5, tenure: 8,  distance: 20,  score: 84, url: "https://www.bizbuysell.com/business-opportunity/laundromat-for-sale-in-kings-county-new-york/2446758/" },
-      { rank: 3,  name: "Profitable Laundromat — 50 Machines",        location: "Manhattan",          state: "NY", price: 239400, cashflow: 76985,  profitability: 32.2, tenure: 15, distance: 25,  score: 82, url: "https://www.bizbuysell.com/business-opportunity/profitable-laundromat-w-i-50-machines-in-prime-location/2464287/" },
-      { rank: 4,  name: "Absentee Laundromat & Dry Cleaner",          location: "Delaware County",    state: "PA", price: 89900,  cashflow: 58000,  profitability: 64.5, tenure: 0,  distance: 100, score: 70, url: "https://www.bizbuysell.com/business-opportunity/absentee-laundromat-and-dry-cleaner-delaware-county-pa-89-900/2374053/" },
-      { rank: 5,  name: "Fully Absentee Laundromat",                  location: "Astoria",            state: "NY", price: 89000,  cashflow: 32000,  profitability: 35.9, tenure: 0,  distance: 15,  score: 66, url: "https://www.bizbuysell.com/business-opportunity/fully-absentee-laundromat-great-location-astoria-ny-89-000/2454771/" },
-      { rank: 6,  name: "Large Laundromat — Attended or Unattended",  location: "Windham",            state: "CT", price: 105000, cashflow: 58000,  profitability: 55.2, tenure: 0,  distance: 120, score: 62, url: "https://www.bizbuysell.com/business-opportunity/large-laundromat-can-be-attended-or-unattended-near-windham-105-000/2401355/" },
-      { rank: 7,  name: "Spacious 4,000 SF Laundromat — 70 Machines", location: "Richmond Hill",      state: "NY", price: 299700, cashflow: 87200,  profitability: 29.1, tenure: 0,  distance: 15,  score: 62, url: "https://www.bizbuysell.com/business-opportunity/spacious-4-000-sf-laundromat-w-i-70-machines-in-prime-location/2484149/" },
-      { rank: 8,  name: "Turnkey Modern Laundromat",                  location: "Queens County",      state: "NY", price: 250000, cashflow: 60000,  profitability: 24.0, tenure: 0,  distance: 15,  score: 62, url: "https://www.bizbuysell.com/business-opportunity/turnkey-modern-laundromat-with-growth-potential-in-prime-spot/2482065/" },
-      { rank: 9,  name: "Laundromat for Sale — Levittown",            location: "Levittown",          state: "NY", price: 280000, cashflow: 60000,  profitability: 21.4, tenure: 0,  distance: 10,  score: 62, url: "https://www.bizbuysell.com/business-opportunity/laundromat-for-sale-levittown-long-island/2454865/" },
-      { rank: 10, name: "Profitable & Growing Laundromat",            location: "Bellmore",           state: "NY", price: 137000, cashflow: 42000,  profitability: 30.7, tenure: 0,  distance: 8,   score: 60, url: "https://www.bizbuysell.com/business-opportunity/profitable-growing-laundromat-near-bellmore-ny-137-000/2391792/" },
-      { rank: 11, name: "Clean Organized Retail Service",             location: "Fords",              state: "NJ", price: 285000, cashflow: 95000,  profitability: 33.3, tenure: 0,  distance: 35,  score: 60, url: "https://www.bizbuysell.com/business-opportunity/clean-organized-retail-service-business-ready-for-new-owner/2484894/" },
-      { rank: 12, name: "Absentee Laundromat — Plainville",          location: "Plainville",         state: "CT", price: 219000, cashflow: 60000,  profitability: 27.4, tenure: 0,  distance: 110, score: 60, url: "https://www.bizbuysell.com/business-opportunity/absentee-laundromat-vibrant-wash-and-fold-near-plainville-ct-219-000/2418579/" },
-      { rank: 13, name: "Laundromat — Suffolk County",                location: "Suffolk County",     state: "NY", price: 250000, cashflow: 60000,  profitability: 24.0, tenure: 0,  distance: 50,  score: 60, url: "https://www.bizbuysell.com/business-opportunity/laundromat-business-for-sale/2356619/" },
-      { rank: 14, name: "Laundromat — Bronx",                        location: "Bronx",              state: "NY", price: 105000, cashflow: 37000,  profitability: 35.2, tenure: 0,  distance: 30,  score: 58, url: "https://www.bizbuysell.com/business-opportunity/laundromat-newer-equipment-great-location-bronx-ny-105-000/2391792/" },
-      { rank: 15, name: "Established Laundromat — Bayonne",           location: "Bayonne",            state: "NJ", price: 220000, cashflow: 46000,  profitability: 20.9, tenure: 0,  distance: 30,  score: 56, url: "https://www.bizbuysell.com/business-opportunity/established-laundromat-great-potential-and-location-nj-220-000/2446882/" },
-      { rank: 16, name: "Partially Attended Laundromat",              location: "New Haven",          state: "CT", price: 229000, cashflow: 53000,  profitability: 23.1, tenure: 0,  distance: 85,  score: 54, url: "https://www.bizbuysell.com/business-opportunity/partially-attended-and-profitable-laundromat-new-haven-ct-229-000/2462854/" },
-      { rank: 17, name: "Long Established Laundromat",                location: "Suffolk County",     state: "NY", price: 299000, cashflow: 42516,  profitability: 14.2, tenure: 15, distance: 50,  score: 54, url: "https://www.bizbuysell.com/business-opportunity/long-established-laundromat/559981/" },
-      { rank: 18, name: "Turnkey Neighborhood Laundromat",            location: "West Babylon",       state: "NY", price: 190000, cashflow: 37000,  profitability: 19.5, tenure: 0,  distance: 30,  score: 52, url: "https://www.bizbuysell.com/business-opportunity/turnkey-neighborhood-laundromat-in-suffolk-county-for-sale/2454865/" },
-      { rank: 19, name: "Highly Visible Laundromat",                  location: "Middlesex County",   state: "NJ", price: 250000, cashflow: 52000,  profitability: 20.8, tenure: 0,  distance: 50,  score: 50, url: "https://www.bizbuysell.com/business-opportunity/highly-visible-laundromat-for-sale-in-north-central-nj/2448611/" },
-      { rank: 20, name: "Semi-Absentee Laundromat — Westchester",     location: "Westchester County", state: "NY", price: 260000, cashflow: 56000,  profitability: 21.5, tenure: 0,  distance: 35,  score: 50, url: "https://www.bizbuysell.com/business-opportunity/semi-absentee-profitable-laundromat-for-sale-in-westchester/2482823/" },
-      { rank: 21, name: "Remodeled Laundromat — Williamsburg",        location: "Brooklyn",           state: "NY", price: 150000, cashflow: 15000,  profitability: 10.0, tenure: 0,  distance: 20,  score: 50, url: "https://www.bizbuysell.com/business-opportunity/remodeled-laundromat-and-newer-equipment-williamsburg-brooklyn-150-000/2437676/" },
-      { rank: 22, name: "4,000 SF Neighborhood Laundromat",           location: "Broome County",      state: "NY", price: 170000, cashflow: 35000,  profitability: 20.6, tenure: 0,  distance: 200, score: 46, url: "https://www.bizbuysell.com/business-opportunity/4-000-sf-neighborhood-laundromat-coin-operated-wash-and-fold/2459066/" },
-      { rank: 23, name: "Starter Laundromat — East Hartford",         location: "East Hartford",      state: "CT", price: 35000,  cashflow: 7000,   profitability: 20.0, tenure: 0,  distance: 100, score: 45, url: "https://www.bizbuysell.com/business-opportunity/neighborhood-and-great-starter-laundromat-near-east-hartford-ct-35-000/2479011/" },
-      { rank: 24, name: "Absentee 24-Hour Laundromat — Ulster County", location: "Ulster County",     state: "NY", price: 275000, cashflow: 42000,  profitability: 15.3, tenure: 0,  distance: 110, score: 34, url: "https://www.bizbuysell.com/business-opportunity/absentee-and-unattended-and-24-hour-laundromat-ulster-county-275-000/2482823/" },
-      { rank: 25, name: "Laundromat — New Brunswick",                 location: "New Brunswick",      state: "NJ", price: 149000, cashflow: 5000,   profitability: 3.4,  tenure: 0,  distance: 50,  score: 0,  url: "https://www.bizbuysell.com/business-opportunity/laundromat-newer-equipment-excellent-potential-new-brunswick-149-000/2474549/", note: "Below 10% profitability threshold" }
+    "weekOf": "2026-04-03",
+    "totalScanned": 76,
+    "qualified": 24,
+    "listings": [
+      {
+        "rank": 1,
+        "name": "Westchester County Laundromat",
+        "location": "Westchester County",
+        "state": "NY",
+        "price": 150000,
+        "cashflow": 66000,
+        "profitability": 44,
+        "tenure": 31,
+        "distance": 35,
+        "score": 69.7,
+        "url": "https://www.bizbuysell.com/business-opportunity/30-year-established-laundromat-for-sale/2482823/",
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "name": "Richmond Hill Laundromat",
+        "location": "Richmond Hill",
+        "state": "NY",
+        "price": 299700,
+        "cashflow": 87200,
+        "profitability": 29.1,
+        "tenure": 20,
+        "distance": 12,
+        "score": 57.6,
+        "url": "https://www.bizbuysell.com/business-opportunity/spacious-4-000-sf-laundromat-w-i-70-machines-in-prime-location/2484149/",
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "name": "Kings County Laundromat",
+        "location": "Kings County",
+        "state": "NY",
+        "price": 200000,
+        "cashflow": 81000,
+        "profitability": 40.5,
+        "tenure": 9,
+        "distance": 20,
+        "score": 57.4,
+        "url": "https://www.bizbuysell.com/business-opportunity/laundromat-for-sale-in-kings-county-new-york/2446758/",
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "name": "New York Laundromat",
+        "location": "New York",
+        "state": "NY",
+        "price": 239400,
+        "cashflow": 77000,
+        "profitability": 32.2,
+        "tenure": 16,
+        "distance": 25,
+        "score": 56.3,
+        "url": "https://www.bizbuysell.com/business-opportunity/profitable-laundromat-w-i-50-machines-in-prime-location/2464287/",
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "name": "Fords Laundromat",
+        "location": "Fords",
+        "state": "NJ",
+        "price": 285000,
+        "cashflow": 95000,
+        "profitability": 33.3,
+        "tenure": 12,
+        "distance": 35,
+        "score": 55.8,
+        "url": "https://www.bizbuysell.com/business-opportunity/clean-organized-retail-service-business-ready-for-new-owner/2484894/",
+        "note": ""
+      },
+      {
+        "rank": 6,
+        "name": "Delaware County Laundromat",
+        "location": "Delaware County",
+        "state": "PA",
+        "price": 89900,
+        "cashflow": 58000,
+        "profitability": 64.5,
+        "tenure": 0,
+        "distance": 120,
+        "score": 53.2,
+        "url": "https://www.bizbuysell.com/business-opportunity/absentee-laundromat-and-dry-cleaner-delaware-county-pa-89-900/2374053/",
+        "note": ""
+      },
+      {
+        "rank": 7,
+        "name": "East Hartford Laundromat",
+        "location": "East Hartford",
+        "state": "CT",
+        "price": 35000,
+        "cashflow": 7000,
+        "profitability": 20,
+        "tenure": 31,
+        "distance": 130,
+        "score": 52.8,
+        "url": "https://www.bizbuysell.com/business-opportunity/neighborhood-and-great-starter-laundromat-near-east-hartford-ct-35-000/2479011/",
+        "note": ""
+      },
+      {
+        "rank": 8,
+        "name": "Brooklyn Laundromat",
+        "location": "Brooklyn",
+        "state": "NY",
+        "price": 250000,
+        "cashflow": 80000,
+        "profitability": 32,
+        "tenure": 8,
+        "distance": 20,
+        "score": 51.3,
+        "url": "https://www.bizbuysell.com/business-opportunity/laundry-pick-up-and-delivery-perfect-for-existing-laundromat/2295313/",
+        "note": ""
+      },
+      {
+        "rank": 9,
+        "name": "Windham Laundromat",
+        "location": "Windham",
+        "state": "CT",
+        "price": 105000,
+        "cashflow": 58000,
+        "profitability": 55.2,
+        "tenure": 0,
+        "distance": 150,
+        "score": 50.2,
+        "url": "https://www.bizbuysell.com/business-opportunity/large-laundromat-can-be-attended-or-unattended-near-windham-105-000/2401355/",
+        "note": ""
+      },
+      {
+        "rank": 10,
+        "name": "Astoria Laundromat",
+        "location": "Astoria",
+        "state": "NY",
+        "price": 89000,
+        "cashflow": 32000,
+        "profitability": 36,
+        "tenure": 0,
+        "distance": 18,
+        "score": 48,
+        "url": "https://www.bizbuysell.com/business-opportunity/turnkey-neighborhood-laundromat-for-sale-in-queens-new-york/2454771/",
+        "note": ""
+      },
+      {
+        "rank": 11,
+        "name": "Bronx Laundromat",
+        "location": "Bronx",
+        "state": "NY",
+        "price": 105000,
+        "cashflow": 37000,
+        "profitability": 35.2,
+        "tenure": 0,
+        "distance": 30,
+        "score": 47.8,
+        "url": "https://www.bizbuysell.com/business-opportunity/laundromat-for-sale-bronx-new-york/2391792/",
+        "note": ""
+      },
+      {
+        "rank": 12,
+        "name": "Suffolk County Laundromat",
+        "location": "Suffolk County",
+        "state": "NY",
+        "price": 299000,
+        "cashflow": 42500,
+        "profitability": 14.2,
+        "tenure": 41,
+        "distance": 45,
+        "score": 44.8,
+        "url": "https://www.bizbuysell.com/business-opportunity/long-established-laundromat/2421092/",
+        "note": ""
+      },
+      {
+        "rank": 13,
+        "name": "Bridgeport Laundromat",
+        "location": "Bridgeport",
+        "state": "CT",
+        "price": 235000,
+        "cashflow": 60500,
+        "profitability": 25.7,
+        "tenure": 0,
+        "distance": 60,
+        "score": 42.7,
+        "url": "https://www.bizbuysell.com/business-opportunity/24-hour-mostly-unattended-new-build-laundromat-bridgeport-235-000/2391498/",
+        "note": ""
+      },
+      {
+        "rank": 14,
+        "name": "Suffolk County Laundromat",
+        "location": "Suffolk County",
+        "state": "NY",
+        "price": 250000,
+        "cashflow": 60000,
+        "profitability": 24,
+        "tenure": 0,
+        "distance": 45,
+        "score": 41.8,
+        "url": "https://www.bizbuysell.com/business-opportunity/laundromat-newer-equipment-great-location-near-bellmore/2356619/",
+        "note": ""
+      },
+      {
+        "rank": 15,
+        "name": "Plainville Laundromat",
+        "location": "Plainville",
+        "state": "CT",
+        "price": 219000,
+        "cashflow": 60000,
+        "profitability": 27.4,
+        "tenure": 0,
+        "distance": 120,
+        "score": 41.1,
+        "url": "https://www.bizbuysell.com/business-opportunity/absentee-laundromat-vibrant-wash-and-fold-near-plainville-ct-219-000/2418579/",
+        "note": ""
+      },
+      {
+        "rank": 16,
+        "name": "Levittown Laundromat",
+        "location": "Levittown",
+        "state": "NY",
+        "price": 280000,
+        "cashflow": 60000,
+        "profitability": 21.4,
+        "tenure": 0,
+        "distance": 8,
+        "score": 40.6,
+        "url": "https://www.bizbuysell.com/business-opportunity/laundromat-for-sale-in-levittown-long-island/2452562/",
+        "note": ""
+      },
+      {
+        "rank": 17,
+        "name": "Queens County Laundromat",
+        "location": "Queens County",
+        "state": "NY",
+        "price": 250000,
+        "cashflow": 60000,
+        "profitability": 24,
+        "tenure": 3,
+        "distance": 15,
+        "score": 40.2,
+        "url": "https://www.bizbuysell.com/business-opportunity/turnkey-modern-laundromat-with-growth-potential-in-prime-spot/2482065/",
+        "note": ""
+      },
+      {
+        "rank": 18,
+        "name": "Bayonne Laundromat",
+        "location": "Bayonne",
+        "state": "NJ",
+        "price": 220000,
+        "cashflow": 46000,
+        "profitability": 20.9,
+        "tenure": 0,
+        "distance": 25,
+        "score": 40.2,
+        "url": "https://www.bizbuysell.com/business-opportunity/established-laundromat-great-potential-and-location-nj-220-000/2446882/",
+        "note": ""
+      },
+      {
+        "rank": 19,
+        "name": "West Babylon Laundromat",
+        "location": "West Babylon",
+        "state": "NY",
+        "price": 190000,
+        "cashflow": 37000,
+        "profitability": 19.5,
+        "tenure": 0,
+        "distance": 20,
+        "score": 39.8,
+        "url": "https://www.bizbuysell.com/business-opportunity/turnkey-laundromat-for-sale-in-broome-county-new-york-wash-and-fold/2454865/",
+        "note": ""
+      },
+      {
+        "rank": 20,
+        "name": "New Haven Laundromat",
+        "location": "New Haven",
+        "state": "CT",
+        "price": 229000,
+        "cashflow": 53000,
+        "profitability": 23.1,
+        "tenure": 0,
+        "distance": 80,
+        "score": 39.3,
+        "url": "https://www.bizbuysell.com/business-opportunity/partially-attended-and-profitable-laundromat-new-haven-ct-229-000/2462854/",
+        "note": ""
+      },
+      {
+        "rank": 21,
+        "name": "Middlesex County Laundromat",
+        "location": "Middlesex County",
+        "state": "NJ",
+        "price": 250000,
+        "cashflow": 52000,
+        "profitability": 20.8,
+        "tenure": 0,
+        "distance": 40,
+        "score": 38.8,
+        "url": "https://www.bizbuysell.com/business-opportunity/highly-visible-laundromat-for-sale-in-north-central-nj/2448611/",
+        "note": ""
+      },
+      {
+        "rank": 22,
+        "name": "Westchester County Laundromat",
+        "location": "Westchester County",
+        "state": "NY",
+        "price": 260000,
+        "cashflow": 56000,
+        "profitability": 21.5,
+        "tenure": 4,
+        "distance": 35,
+        "score": 37.3,
+        "url": "https://www.bizbuysell.com/business-opportunity/semi-absentee-profitable-laundromat-for-sale-in-westchester/2411440/",
+        "note": ""
+      },
+      {
+        "rank": 23,
+        "name": "Broome County Laundromat",
+        "location": "Broome County",
+        "state": "NY",
+        "price": 170000,
+        "cashflow": 35000,
+        "profitability": 20.6,
+        "tenure": 0,
+        "distance": 200,
+        "score": 32,
+        "url": "https://www.bizbuysell.com/business-opportunity/4-000-sf-neighborhood-laundromat-coin-operated-wash-and-fold/2459066/",
+        "note": ""
+      },
+      {
+        "rank": 24,
+        "name": "Ulster County Laundromat",
+        "location": "Ulster County",
+        "state": "NY",
+        "price": 275000,
+        "cashflow": 42000,
+        "profitability": 15.3,
+        "tenure": 0,
+        "distance": 100,
+        "score": 29.3,
+        "url": "https://www.bizbuysell.com/business-opportunity/absentee-and-unattended-and-24-hour-laundromat-ulster-county-275-000/2477777/",
+        "note": ""
+      }
     ]
   }
 ];
@@ -514,11 +748,11 @@ function setDelta(id, curr, prev, fmt, invertGood) {
   if (!el) return;
   const diff = curr - prev;
   const pct = Math.abs(Math.round((diff / prev) * 100));
-  if (diff === 0) { el.textContent = '→ No change'; el.className = 'metric-delta neutral'; return; }
+  if (diff === 0) { el.textContent = 'â No change'; el.className = 'metric-delta neutral'; return; }
   const up = diff > 0;
   const good = invertGood ? !up : up;
   el.className = 'metric-delta ' + (good ? 'up' : 'down');
-  el.textContent = (up ? '▲ ' : '▼ ') + fmt(Math.abs(diff)) + ' (' + pct + '% vs last week)';
+  el.textContent = (up ? 'â² ' : 'â¼ ') + fmt(Math.abs(diff)) + ' (' + pct + '% vs last week)';
 }
 
 function updateStateBreakdown(week) {
@@ -543,7 +777,7 @@ function updateStateBreakdown(week) {
       <div class="state-stat"><span class="state-stat-label">Avg Profitability</span><span class="state-stat-value">${Math.round(avg(ls.map(l=>l.profitability)))}%</span></div>
       <div class="state-stat"><span class="state-stat-label">Avg Distance</span><span class="state-stat-value">${Math.round(avg(ls.filter(l=>l.distance>0).map(l=>l.distance)))} mi</span></div>
       <div class="state-stat"><span class="state-stat-label">Best Score</span><span class="state-stat-value">${best.score}/100</span></div>
-      <div class="state-card-hint">👆 Click to see all ${ls.length} listings</div>
+      <div class="state-card-hint">ð Click to see all ${ls.length} listings</div>
     </div>`;
   }).join('');
 }
@@ -557,19 +791,19 @@ function updateTable(listings) {
 
   const state = currentTab;
   document.getElementById('tableTitle').textContent = state === 'ALL' ? 'All Qualified Listings' : `${stateName(state)} Qualified Listings`;
-  document.getElementById('tableMeta').textContent = `${sorted.length} listings · sorted by ${sortCol}`;
+  document.getElementById('tableMeta').textContent = `${sorted.length} listings Â· sorted by ${sortCol}`;
 
   document.getElementById('listingsBody').innerHTML = sorted.map((l, i) => {
     const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : 'rank-other';
     const scoreClass = l.score >= 75 ? 'score-high' : l.score >= 55 ? 'score-mid' : 'score-low';
     const profitClass = l.profitability >= 40 ? 'profit-high' : l.profitability >= 20 ? 'profit-mid' : 'profit-low';
-    const tenureStr = l.tenure > 0 ? l.tenure + ' yrs' : '—';
-    const distStr = l.distance > 0 ? '~' + l.distance + ' mi' : '—';
+    const tenureStr = l.tenure > 0 ? l.tenure + ' yrs' : 'â';
+    const distStr = l.distance > 0 ? '~' + l.distance + ' mi' : 'â';
     return `<tr>
       <td><span class="rank-badge ${rankClass}">${i+1}</span></td>
       <td class="listing-name">
         <a class="listing-link" href="${l.url}" target="_blank">${l.name}</a>
-        <div class="listing-note">${l.location}${l.note ? ' · ⚠️ ' + l.note : ''}</div>
+        <div class="listing-note">${l.location}${l.note ? ' Â· â ï¸ ' + l.note : ''}</div>
       </td>
       <td><span class="state-badge state-${l.state}">${l.state}</span></td>
       <td><strong>$${l.price.toLocaleString()}</strong></td>
@@ -598,21 +832,21 @@ function showStateModal(state) {
     .sort((a, b) => b.score - a.score);
 
   document.getElementById('modalTitle').innerHTML =
-    `<span style="color:${STATE_COLORS[state]}">${stateName(state)}</span> — All Qualified Listings`;
+    `<span style="color:${STATE_COLORS[state]}">${stateName(state)}</span> â All Qualified Listings`;
   document.getElementById('modalSubtitle').textContent =
-    `${ls.length} listings · Week of ${formatDate(week.weekOf)} · Max $300K · Min 10% profitability`;
+    `${ls.length} listings Â· Week of ${formatDate(week.weekOf)} Â· Max $300K Â· Min 10% profitability`;
 
   document.getElementById('modalListingsBody').innerHTML = ls.map((l, i) => {
     const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : 'rank-other';
     const scoreClass = l.score >= 75 ? 'score-high' : l.score >= 55 ? 'score-mid' : 'score-low';
     const profitClass = l.profitability >= 40 ? 'profit-high' : l.profitability >= 20 ? 'profit-mid' : 'profit-low';
-    const tenureStr = l.tenure > 0 ? l.tenure + ' yrs' : '—';
-    const distStr = l.distance > 0 ? '~' + l.distance + ' mi' : '—';
+    const tenureStr = l.tenure > 0 ? l.tenure + ' yrs' : 'â';
+    const distStr = l.distance > 0 ? '~' + l.distance + ' mi' : 'â';
     return `<tr>
       <td><span class="rank-badge ${rankClass}">${i+1}</span></td>
       <td class="listing-name">
         <a class="listing-link" href="${l.url}" target="_blank">${l.name}</a>
-        <div class="listing-note">${l.location}${l.note ? ' · ⚠️ ' + l.note : ''}</div>
+        <div class="listing-note">${l.location}${l.note ? ' Â· â ï¸ ' + l.note : ''}</div>
       </td>
       <td><strong>$${l.price.toLocaleString()}</strong></td>
       <td style="color:#16a34a; font-weight:600;">$${l.cashflow.toLocaleString()}</td>
@@ -735,7 +969,7 @@ function drawScatterChart(week) {
           callbacks: {
             label: ctx => {
               const d = ctx.raw;
-              return `${ctx.dataset.label}: $${(d.x).toFixed(0)}K price · $${(d.y).toFixed(0)}K CF`;
+              return `${ctx.dataset.label}: $${(d.x).toFixed(0)}K price Â· $${(d.y).toFixed(0)}K CF`;
             }
           }
         }
